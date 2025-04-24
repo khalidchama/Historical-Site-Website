@@ -1,0 +1,561 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*body{
+    max-width: 1200px;
+    margin: auto;
+}*/
+
+/*First part*/
+.main {
+    display: block;
+    width: 100%;
+    background-image: url(pic2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 2%;
+}
+
+/*This is a styling of a mobile navigation*/
+.mobile {
+    display: none;
+}
+
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 90%;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #fffefe;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel a:hover {
+    color: wheat;
+    font-size: 110%;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(28, 146, 185);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color:rgb(22, 122, 155);
+}
+
+/*Mobile navigation styling end*/
+
+/*Styling of navigation bar start*/
+.nav {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    font-weight: bold;
+}
+
+.nav .logo {
+    width: 20%;
+}
+
+.nav .menu {
+    width: 60%;
+}
+
+.nav .menu a {
+    padding: 2%;
+}
+
+.nav .contact {
+    width: 20%;
+}
+
+/*Styling of Hero Section*/
+.hero {
+    margin:6% auto 15%;
+    width: 40%;
+    text-align: center;
+}
+
+#main-headline {
+    font-size: 350%; font-weight: 600;
+}
+
+.hero a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 2% 4%;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.hero a:hover {
+    font-weight: bold;
+}
+
+/*Styling bottom part*/
+.bottom {
+    display: flex;
+}
+
+.bottom-left, .bottom-right {
+    display: flex;
+    width: 25%;
+    /*border: 1px solid white;*/
+    height: 120px;
+    padding: 3%;
+    font-size: 200%;
+}
+
+.fab {
+    width: 50%;
+}
+
+.bottom-center {
+    width: 50%;
+    /*border: 1px solid white;*/
+    height: 120px;
+    padding: 1%;
+    text-align: center;
+}
+
+.logos-on-mobile {
+    display: none;
+}
+
+/*Second part*/
+.titles { 
+    font-size: 200%; /*This is styling pf titles from second to fifth part*/
+    font-weight: 600;
+    color: rgb(131, 60, 2);
+}
+
+.heritage, .landscapes, .brief {
+    padding: 2% 4%;
+    margin: 2% 0%;
+} /*This is the styling of the top-bottom and left-right padding of some major sections in the website*/
+
+.heritage {
+    display: flex;
+    width: 100%;
+    /*padding: 2% 4%;
+    /*margin: 1% 2%;*/
+}
+
+#heritage-title-mobile {
+    width: 100%;
+    padding: 2% 2% 0%;
+    display: none;
+}
+
+.heritage-left {
+    width: 50%;
+    height: 600px;
+    /*border: 1px solid blueviolet;*/
+}
+
+.heritage-right {
+    width: 50%;
+    height: 600px;
+    /*border: 1px solid brown;*/
+    padding: 0% 2% 2%;
+}
+
+.heritage-left-top {
+    width: 100%;
+    height: 60%;
+    /*border: 1px solid blueviolet;*/
+    padding: 2% 2% 1%;
+}
+
+.heritage-left-top img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.heritage-left-bottom {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    /*border: 1px solid blueviolet;*/
+}
+
+.heritage-left-bottom #image-left {
+    width: 50%;
+    /*border: 1px solid blueviolet;*/
+    padding: 1% 1% 2% 2%;
+}
+
+.heritage-left-bottom #image-right {
+    width: 50%;
+    /*border: 1px solid blueviolet;*/
+    padding: 1% 2% 2% 1%;
+}
+
+.heritage-left-bottom img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.heritage-right-top {
+    height: 50%;
+    /*border: 1px solid palegreen;*/
+}
+
+.heritage-right-bottom {
+    height: 52%;
+    display: flex;
+    align-items: flex-end;
+    /*border: 1px solid red;*/
+}
+
+.heritage-right-bottom-words {
+    width: 25%;
+    margin-right: 4%;
+}
+
+.heritage-right-bottom-words .big-words {
+    font-size: 170%;
+    /*font-weight: 500;*/
+    color: rgb(131, 60, 2);
+}
+
+/*Third part*/
+.landscapes {
+    display: block;
+    width: 100%;
+    /*padding: 2% 4%;
+    /*padding:1% 2%;
+    margin:1% 2%;*/
+    /*border: 1px solid black;*/
+}
+
+.landscapes-top {
+    margin: auto;
+    width: 50%;
+    padding: 1%;
+    text-align: center;
+}
+
+.landscapes-bottom {
+    display: flex;
+}
+
+.landscapes-bottom a:hover {
+    font-weight: 500;
+}
+
+.landscapes-bottom-left, .landscapes-bottom-center, .landscapes-bottom-right {
+    width: 33%;
+    padding: 1%;
+}
+
+.landscapes-bottom-frames {
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+/*Styling icons*/
+.fa-regular {
+    background-color: rgb(131, 60, 2);
+    padding: 5%;
+    border-radius: 50%;
+}
+
+/*Fourth part*/
+.brief {
+    display: flex;
+    width: 100%;
+    /*padding: 2% 4%;
+    /*padding:1% 2%;
+    margin:2% 2%;*/
+    /*border: 1px solid black;*/
+}
+
+.brief-titles {
+    font-size: 120%;
+    font-weight: 500;
+    color: rgb(131, 60, 2);
+}
+
+.brief-left, .brief-right {
+    width: 50%;
+    padding: 2%;
+}
+
+.brief-right img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*Styling icons*/
+.fas {
+    color: rgb(131, 60, 2);
+    background-color: rgb(253, 221, 195);
+    padding: 20%;
+    border-radius: 50%;
+}
+
+.icon-div {
+    width: 15%;
+    padding: 1%;
+}
+
+/*Fifth part*/
+.footer {
+    display: block;
+    width: 100%;
+    color: white;
+    background-image: url(pic9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2% 2%
+    /*padding:2% 2%;
+    margin:2% 2%;*/
+    /*border: 1px solid blue;*/
+}
+
+.footer-top {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-top a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 2% 4%;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.footer-top a:hover {
+    font-weight: bold;
+}
+
+.footer-center {
+    display: flex;
+}
+
+.footer-center-list {
+    list-style-type: none; /*No marker will be used in the lists. Marker like circle bullet etc will not be used*/
+    width: 33%;
+}
+
+.footer-center-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-center-list a:hover {
+    font-weight: 500;
+    color: wheat;
+}
+
+.footer-bottom {
+    width: 100%;
+    padding: 2%;
+}
+
+/*Screen size styling*/
+@media only screen and (max-width:1200px) {
+    .hero {
+        width: 50%;
+    }
+
+    .heritage-right-bottom-words {
+    width: 30%;
+    margin-right: 4%;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .hero {
+        width: 60%;
+    }
+
+    .heritage, .landscapes, .brief {
+    padding: 2% 2%;
+    } /*This is the styling of the top-bottom and left-right padding of some major sections in the website*/
+
+    .heritage-right-bottom-words {
+    width: 33%;
+    margin-right: 2%;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    /*Navigation*/
+    .mobile {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+    
+    /*Hero section*/
+    .hero {
+        width: 80%;
+    }
+
+    .bottom {
+        display: block;
+    }
+
+    .bottom-left, .bottom-right {
+        display: none;
+    }
+
+    .bottom-center {
+        height: fit-content;
+        margin-bottom: 2%;
+    }
+
+    .logos-on-mobile {
+        display: flex;
+        width: 80%;
+        margin:2% auto;
+        text-align: center;
+    }
+
+    .icon-div {
+        width: 10%;
+        padding: 1%;
+    }
+
+    .bottom-left, .bottom-center, .bottom-right {
+        width: 100%;
+    }
+
+    /*Second part*/
+
+    .heritage, .landscapes, .brief {
+    padding: 2% 1%;
+    } /*This is the styling of the top-bottom and left-right padding of some major sections in the website*/
+
+    .heritage {
+        display: block;
+    }
+
+    #heritage-title-mobile {
+        display: block;
+    }
+
+    #heritage-title-desktop {
+        display: none;
+    }
+    
+    .heritage-left, .heritage-right {
+        width: 100%;
+    }
+
+    .heritage-right {
+        height: fit-content;
+        margin-bottom: 2%;
+    }
+
+    .heritage-right-bottom {
+        height: fit-content;
+    }
+
+    /*Third part*/
+    .landscapes-top {
+        width: 100%;
+    }
+
+    .landscapes-bottom {
+        display: block;
+    }
+
+    .landscapes-bottom-left, .landscapes-bottom-center, .landscapes-bottom-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /*Fourth part*/
+    .brief {
+        display: block;
+    }
+
+    .brief-left, .brief-right {
+        width: 100%;
+    }
+
+    /*Fifth part*/
+    .footer-top {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    /*Hero section*/
+    .hero {
+        width: 100%;
+    }
+
+    #main-headline {
+        font-size: 250%;
+    }
+
+    .heritage, .landscapes, .brief {
+    padding: 2% 0%;
+    } /*This is the styling of the top-bottom and left-right padding of some major sections in the website*/
+
+    /*Fifth part*/
+    .footer-top {
+        width: 100%;
+    }
+    
+    .footer-center {
+        display: block;
+    }
+
+    .footer-center-list {
+        width: 100%;
+    }
+}
