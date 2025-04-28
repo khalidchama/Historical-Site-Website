@@ -166,7 +166,7 @@
     color: rgb(131, 60, 2);
 }
 
-.heritage, .landscapes, .brief {
+.heritage, .landscapes, .brief, .footer {
     padding: 2% 4%;
     margin: 2% 0%;
 } /*This is the styling of the top-bottom and left-right padding of some major sections in the website*/
@@ -526,6 +526,10 @@
     /*Fifth part*/
     .footer-top {
         width: 60%;
+    }
+
+    .footer-center-list {
+        margin: 2%;
     }
 }
 
