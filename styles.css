@@ -380,6 +380,8 @@
 
 .footer-center-list {
     list-style-type: none; /*No marker will be used in the lists. Marker like circle bullet etc will not be used*/
+    margin: 0;
+    padding: 0;
     width: 33%;
 }
 
